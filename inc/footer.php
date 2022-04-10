@@ -100,24 +100,9 @@
       </div>
     </div>
 
-    <div class="row mt-2">
-      <div class="col-md-7">
-        <p class="m-0">Bản quyền thuộc về &copy; <?php echo $_settings->info('short_name') ?> 2022</p>
-        <p class="m-0">Thiết kế bởi <a href="mailto:taphamducanh@gmail.com">Duc Anh's group</a></p>
-      </div>
-
-      <div class="col-md-5 visible-md-block visible-lg-block">
-        <div class="footer-certificate-box">
-          <a title="Chứng nhận sàn giao dịch TMĐT" href="http://online.gov.vn/Home/WebDetails/21505" class="footer-trust">
-            <span>Được chứng nhận</span>
-            <img alt="Chứng nhận WEBSITE THƯƠNG MẠI ĐIỆN TỬ" src="../assets/images/seal-ecommerce.png" class="img-responsive">
-          </a>
-          <a title="Thanh toán an toàn trên Tiki.vn" href="#" class="footer-payment">
-            <span>Cách thức thanh toán</span>
-            <img alt="Thanh toán an toàn trên Tiki.vn" src="../assets/images/safe.jpg" class="img-responsive">
-          </a>
-        </div>
-      </div>
+    <div class="row mt-2">  
+        <p class="m-0 text-center">Bản quyền thuộc về &copy; <?php echo $_settings->info('short_name') ?> 2022</p>
+        <p class="m-0 text-center">Thiết kế bởi <a href="mailto:taphamducanh@gmail.com">Duc Anh's group</a></p> 
     </div>
   </div>
 </footer>
