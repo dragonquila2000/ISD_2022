@@ -72,23 +72,23 @@
       <div class="col-md-3 question">
         <h5>Hỏi đáp</h5>
         <ul class="p-0" style="list-style-type:none;">
-          <li><a href="#"></a>Các câu hỏi phổ biến</li>
-          <li><a href="#"></a>Gửi câu hỏi</li>
-          <li><a href="#"></a>Tin tức</li>
-          <li><a href="#"></a>Liên hệ</li>
+          <li><a href="#">Các câu hỏi phổ biến</a></li>
+          <li><a href="#">Gửi câu hỏi</a></li>
+          <li><a href="#">Tin tức</a></li>
+          <li><a href="#">Liên hệ</a></li>
         </ul>
       </div>
 
       <div class="col-md-3 help">
         <h5>Trợ giúp</h5>
         <ul class="p-0" style="list-style-type:none;">
-          <li><a href="#"></a>Hướng dẫn tải đĩa CD</li>
-          <li><a href="#"></a>Hướng dẫn đặt hàng</li>
-          <li><a href="#"></a>Xác nhận đơn hàng</li>
-          <li><a href="#"></a>Hướng dẫn thanh toán</li>
+          <li><a href="#">Hướng dẫn tải đĩa CD</a></li>
+          <li><a href="#">Hướng dẫn đặt hàng</a></li>
+          <li><a href="./?p=delivery_confirm">Xác nhận đơn hàng</a></li>
+          <li><a href="./?p=payment">Hướng dẫn thanh toán</a></li>
           <li><a href="./?p=delivery">Phương thức vận chuyển</a></li>
           <li><a href="./?p=private_policy">Chính sách bảo mật thông tin</a></li>
-          <li><a href="#"></a>Download danh mục sách độc quyền</li>
+          <li><a href="#">Download danh mục sách độc quyền</a></li>
         </ul>
       </div>
 
@@ -107,10 +107,11 @@
   </div>
 </footer>
 <Style>
-  a{
+  a {
     color: black;
   }
-  a:hover{
+
+  a:hover {
     color: none;
   }
 </Style>
