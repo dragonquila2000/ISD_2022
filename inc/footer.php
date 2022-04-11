@@ -86,8 +86,8 @@
           <li><a href="#"></a>Hướng dẫn đặt hàng</li>
           <li><a href="#"></a>Xác nhận đơn hàng</li>
           <li><a href="#"></a>Hướng dẫn thanh toán</li>
-          <li><a href="#"></a>Phương thức vận chuyển</li>
-          <li><a href="#"></a>Chính sách bảo mật thông tin</li>
+          <li><a href="./?p=delivery">Phương thức vận chuyển</a></li>
+          <li><a href="./?p=private_policy">Chính sách bảo mật thông tin</a></li>
           <li><a href="#"></a>Download danh mục sách độc quyền</li>
         </ul>
       </div>
@@ -100,13 +100,20 @@
       </div>
     </div>
 
-    <div class="row mt-2">  
-        <p class="m-0 text-center">Bản quyền thuộc về &copy; <?php echo $_settings->info('short_name') ?> 2022</p>
-        <p class="m-0 text-center">Thiết kế bởi <a href="mailto:taphamducanh@gmail.com">Duc Anh's group</a></p> 
+    <div class="row mt-2">
+      <p class="m-0 text-center">Bản quyền thuộc về &copy; <?php echo $_settings->info('short_name') ?> 2022</p>
+      <p class="m-0 text-center">Thiết kế bởi <a href="mailto:taphamducanh@gmail.com">Duc Anh's group</a></p>
     </div>
   </div>
 </footer>
-
+<Style>
+  a{
+    color: black;
+  }
+  a:hover{
+    color: none;
+  }
+</Style>
 
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
