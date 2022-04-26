@@ -16,7 +16,7 @@
         </h3>
             <hr>
         </div>
-        <div class="row  align-items-center h-100">
+        <div class="row h-100">
             
             <div class="col-lg-5 border-right">
                 
@@ -32,13 +32,13 @@
                     <label for="" class="control-label">Số điện thoại</label>
                     <input type="text" class="form-control form-control-sm form" name="contact" required>
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <label for="" class="control-label">Giới tính</label>
                     <select name="gender" id="" class="custom-select select" required>
                         <option>Nam</option>
                         <option>Nữ</option>
                     </select>
-                </div>
+                </div> -->
             </div>
             <div class="col-lg-7">
                 <div class="form-group">

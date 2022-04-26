@@ -22,13 +22,13 @@
                                 <label for="" class="control-label">Số điện thoại</label>
                                 <input type="text" class="form-control form-control-sm form" name="contact" value="<?php echo $_settings->userdata('contact') ?>" required>
                             </div>
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <label for="" class="control-label">Giới tính</label>
                                 <select name="gender" id="" class="custom-select select" required>
-                                    <option <?php echo $_settings->userdata('gender') == "Male" ? "selected" : '' ?>>Male</option>
-                                    <option <?php echo $_settings->userdata('gender') == "Female" ? "selected" : '' ?>>Female</option>
+                                    <option <?php //echo $_settings->userdata('gender') == "Male" ? "selected" : '' ?>>Male</option>
+                                    <option <?php //echo $_settings->userdata('gender') == "Female" ? "selected" : '' ?>>Female</option>
                                 </select>
-                            </div>
+                            </div> -->
                             <div class="form-group">
                                 <label for="" class="control-label">Địa chỉ giao hàng mặc định</label>
                                 <textarea class="form-control form" rows='3' name="default_delivery_address"><?php echo $_settings->userdata('default_delivery_address') ?></textarea>
@@ -38,11 +38,11 @@
                                 <input type="text" name="email" class="form-control form" value="<?php echo $_settings->userdata('email') ?>" required>
                             </div>
                             <div class="form-group">
-                                <label for="password" class="control-label">Mật khẩu mới</label>
+                                <label for="password" class="control-label">Mật khẩu hiện tại</label>
                                 <input type="password" name="password" class="form-control form" value="">
                             </div>
                             <div class="form-group">
-                                <label for="cpassword" class="control-label">Mật khẩu hiện tại</label>
+                                <label for="cpassword" class="control-label">Mật khẩu mới</label>
                                 <input type="password" name="cpassword" class="form-control form" value="">
                             </div>
                             <div class="form-group d-flex justify-content-end">
