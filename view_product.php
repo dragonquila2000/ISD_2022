@@ -108,7 +108,7 @@ if ($products->num_rows > 0) {
                                 <div class="card-body p-4">
                                     <div class="">
                                         <!-- Product name-->
-                                        <h5 class="fw-bolder"><?php echo $row['title'] ?></h5>
+                                        <h5 class="fw-bolder" title="<?php echo $row['title']; ?>"><?php echo truncate($row['title'],38) ?></h5>
                                     </div>
                                 </div>
                         </a>
@@ -172,3 +172,17 @@ if ($products->num_rows > 0) {
         })
     })
 </script>
+
+<?php
+function truncate($text, $chars)
+{
+    if (strlen($text) <= $chars) {
+        return $text;
+    }
+    $text = $text . " ";
+    $text = substr($text, 0, $chars);
+    $text = substr($text, 0, strrpos($text, ' '));
+    $text = $text . "...";
+    return $text;
+}
+?>
