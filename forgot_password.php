@@ -19,7 +19,7 @@
 
                             $_SESSION['mail'] = $email;
                             $_SESSION['code'] = $code;
-                            header('Location: ' . base_url . '/?p=verification');
+                            header('Location: ' . base_url . '?p=verification');
                         }
                     }
                     ?>

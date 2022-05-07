@@ -14,12 +14,14 @@ class ForgetPassword extends DBConnection
     }
 
     public function getUser() {
+        extract($_POST);
         $sql = "SELECT * FROM clients";
         $result = $this->conn->query($sql);
         return $result;
     }
 
     public function getUserEmail($email){
+        extract($_POST);
         $sql = "SELECT * FROM clients WHERE email ='$email'";
         $result = $this->conn->query($sql);
         if ($result) {
@@ -29,8 +31,9 @@ class ForgetPassword extends DBConnection
         }
     }
 
-    public function forgetPass($pass,$email) {
-        $sql = "UPDATE clients SET password = '$pass' WHERE email ='$email'";
+    public function forgetPass($password,$email) {
+        extract($_POST);
+        $sql = "UPDATE clients SET password = md5('$password') WHERE email ='$email'";
         $result = $this->conn->query($sql);
     }
 }
