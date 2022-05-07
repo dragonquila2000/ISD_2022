@@ -4,23 +4,22 @@
             <table>
                 <tr>
                     <?php
-                    require_once 'classes/Users.php';
-                    if (isset($_POST['submit'])) {
+                    if (isset($_POST['submit'])){
                         $error = array();
                         $email = $_POST['email'];
-                        if ($email == '') {
+                        if ($email == ''){
                             $error['email'] = 'Không được để trống';
                         }
-                        if (empty($error)) {
-                            $result = $users->getUserEmail($email);
+                        if (empty($error)){
+                            $result = $user->getUserEmail($email);
                             $code = substr(rand(0,999999),0,6);
                             $title = 'Quên mật khẩu';
                             $content = "Mã xác nhận của bạn là: <span style='color:green'>".$code."</span>";
                             $mail->sendMail($title, $content, $email);
 
-                            $_SESSION['email'] = $email;
+                            $_SESSION['mail'] = $email;
                             $_SESSION['code'] = $code;
-                            echo '<script>location.href = "./?p=verification";</script>';
+                            header('Location: ' . base_url . '/?p=verification');
                         }
                     }
                     ?>
@@ -38,7 +37,6 @@
                         <button class="login btn btn-light" type="submit" name="submit">Gửi yêu cầu</button>
                     </div>
                 </tr>
-
             </table>
         </div>
     </form>

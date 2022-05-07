@@ -30,7 +30,7 @@
 
         <div class="row gx-4 gx-lg-5 row-cols-md-3 row-cols-xl-4 justify-content-center">
             <?php
-            $products = $conn->query("SELECT * FROM `products` where status = 1 order by rand() limit 10 ");
+            $products = $conn->query("SELECT * FROM `products` where status = 1 and category_id = 5 order by rand() limit 8 ");
             while ($row = $products->fetch_assoc()) :
                 $upload_path = base_app . '/uploads/product_' . $row['id'];
                 $img = "";
@@ -54,6 +54,7 @@
                     <!-- Product actions-->
                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                         <div class="text-center">
+
                             <a href=".?p=view_product&id=<?php echo md5($row['id']) ?>">
                                 <div class="card product-item">
                                     <!-- Product image-->
@@ -63,7 +64,7 @@
                                         <div class="">
                                             <!-- Product name-->
                                             <h5 class="fw-bolder" title="<?php echo $row['title']; ?>"><?php echo truncate($row['title'],38) ?></h5>
-                                            <!--                                          rút gọn tên title(chưa thành công)  . (strlen($row['title']) > 25 ? substr($row['title'], 0, 5)."..." : $row['title'])-->                                           
+                                            <!--                                          rút gọn tên title(chưa thành công)  . (strlen($row['title']) > 25 ? substr($row['title'], 0, 5)."..." : $row['title'])-->
                                         </div>
                                     </div>
                             </a>

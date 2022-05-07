@@ -24,17 +24,22 @@ $total = 0;
                     <div class="form-group d-flex pl-2">
                         <div class="custom-control custom-radio">
                           <input class="custom-control-input custom-control-input-primary" type="radio" id="customRadio4" name="order_type" value="2" checked="">
-                          <label for="customRadio4" class="custom-control-label">Giao hàng tận nơi</label>
+                          <label for="customRadio4" class="custom-control-label">Nhận tại cửa hàng</label>
                         </div>
                         <div class="custom-control custom-radio ml-3">
                           <input class="custom-control-input custom-control-input-primary custom-control-input-outline" type="radio" id="customRadio5" name="order_type" value="1">
-                          <label for="customRadio5" class="custom-control-label">Nhận tại cửa hàng</label>
+                          <label for="customRadio5" class="custom-control-label">Giao hàng tận nơi</label>
                         </div>
                       </div>
-                        <br><p style="margin-left: 6px">Lưu ý: nếu quý khách nhận hàng tại của hàng thì phải nhận trong vòng 1 tuần kể từ khi nhân viên liên lạc. Trong trường hợp quý khách không đến nhận trong 1 tuần mà không báo trước, chúng tôi sẽ hủy đơn hàng.</p>
-                        <div class="form-group col address-holder">
+                        <div class="address-store">
+                            <br><p style="margin-left: 6px">Địa chỉ nhận hàng: Số 808 Đường Láng, Phường Láng Thượng, Quận Đống Đa, Hà Nội
+                                SĐT: <strong>0243.775.5620 | 0912.269.229<p style="margin-left: 6px"></strong></p>
+                            <br><p style="margin-left: 6px">Lưu ý: nếu quý khách nhận hàng tại của hàng thì phải nhận trong vòng 1 tuần kể từ khi nhân viên liên lạc. Trong trường hợp quý khách không đến nhận trong 1 tuần mà không báo trước, chúng tôi sẽ hủy đơn hàng.</p>
+                        </div>
+                        <div class="form-group col address-holder" style="display: none">
+                            <p>Chính sách vận chuyển: Hóa đơn trên 400k sẽ được miễn phí ship, với đơn hàng ngoại tỉnh thì phí cố định là 35k, với đơn hàng trong nội thành thì phí sẽ giao động từ 20-30k.</p>
                             <label for="" class="control-label">Địa chỉ nhận hàng</label>
-                            <textarea id="" cols="30" rows="3" name="delivery_address" class="form-control" style="resize:none"><?php echo $_settings->userdata('default_delivery_address') ?></textarea>
+                            <textarea id="" cols="30" rows="3" name="delivery_address" class="form-control" style="resize:none" required><?php echo $_settings->userdata('default_delivery_address')?></textarea>
                         </div>
                         <div class="col">
                             <span><h4><b>Total:</b> <?php echo number_format($total) ?></h4></span>
@@ -107,6 +112,11 @@ $(function(){
             $('.address-holder').hide('slow')
         }else{
             $('.address-holder').show('slow')
+        }
+        if($(this).val() ==1){
+            $('.address-store').hide('slow')
+        }else{
+            $('.address-store').show('slow')
         }
     })
     $('#place_order').submit(function(e){

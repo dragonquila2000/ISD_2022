@@ -11,28 +11,6 @@ Class Users extends DBConnection {
 		parent::__destruct();
 	}
 
-	public function forgetPass($pass,$email) {
-        extract($_POST);
-	    $sql = "UPDATE clients SET password ='$pass' WHERE email = '$email'";
-	    $result = $this->conn->execute($sql);
-    }
-
-    public function getUser() {
-	    $sql = "SELECT * from clients";
-	    $result = $this->conn->query($sql);
-	    return $result;
-    }
-
-    public function getUserEmail($email) {
-	    $sql = "SELECT * from clients WHERE email ='$email'";
-	    $result = $this->conn->query($sql);
-	    if ($result) {
-	        return $result;
-        } else {
-	        echo "<h4 style='color:red;'>Email không tồn tại</h4> <br>";
-        }
-    }
-
 	public function save_users(){
 		extract($_POST);
 		$data = '';

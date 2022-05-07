@@ -42,7 +42,7 @@ if ($products->num_rows > 0) {
             </div>
             <div class="col-md-6">
                 <!-- <div class="small mb-1">SKU: BST-498</div> -->
-                <h1 class="display-5 fw-bolder border-bottom border-primary pb-1"><?php echo $title ?></h1>
+                <h1 class="display-5 border-bottom border-primary pb-1"><?php echo $title ?></h1>
                 <p class="m-0">
                     <small>Tác giả: <?php echo $author ?></small>
                 </p>
@@ -71,9 +71,9 @@ if ($products->num_rows > 0) {
     </div>
 </section>
 <!-- Related items section-->
-<section class="py-5 bg-light">
+<section class="py-5" style="background-color: whitesmoke">
     <div class="container px-4 px-lg-5 mt-5">
-        <h2 class="fw-bolder mb-4">Sách cùng chuyên mục</h2>
+        <h2 class="mb-4">Sách cùng chuyên mục</h2>
         <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-3 row-cols-xl-4 justify-content-center">
             <?php
             $products = $conn->query("SELECT * FROM `products` where status = 1 and (category_id = '{$category_id}' or sub_category_id = '{$sub_category_id}') and id !='{$id}' order by rand() limit 4 ");
@@ -119,6 +119,12 @@ if ($products->num_rows > 0) {
         </div>
         <?php endwhile; ?>
     </div>
+    </div>
+</section>
+<!--Product rating-->
+<section class="py-5" style="background-color: white">
+    <div class="container px-4 px-lg-5 mt-5">
+
     </div>
 </section>
 <script>
