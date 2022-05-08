@@ -14,6 +14,7 @@ $user = new ForgetPassword();
                 <tr>
                     <p style="margin-bottom: 20px" class="title">Đổi mật khẩu</p>
                 </tr>
+                <hr>
                 <?php
                 if (isset($_POST['submit'])) {
                     $error = array();
@@ -30,7 +31,7 @@ $user = new ForgetPassword();
                         <div class="alert alert-danger" role="alert">
                             <?= $error['fail'] ?>
                         </div>
-                    <?php elseif (($error['success'])) : ?>
+                    <?php elseif (isset($error['success'])) : ?>
                         <div class="alert alert-success" role="alert">
                             <?= $error['success'] ?>
                         </div>

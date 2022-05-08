@@ -29,7 +29,7 @@
 <section class="py-0">
     <div class="container px-4 px-lg-5 mt-5">
         <div class="row" style="border: 1px solid #f0f0f0; box-shadow: #f0f0f0; padding: 20px; background-color: whitesmoke">
-            <div id="carouselExampleSlidesOnly" class="carousel slide col-md-8 mb-5" data-ride="carousel">
+            <div id="carouselExampleSlidesOnly" class="carousel slide col-md-8" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img class="d-block w-100" src="assets/images/b1.jpg" alt="First slide">
@@ -43,12 +43,18 @@
                 </div>
             </div>
             <div class="ads col-md-4">
-                <img src="assets/images/b3.jpg" style="width: 381px; height: 329px">
+                <img src="assets/images/b3.jpg" style="width: 370px; height: 320px">
             </div>
         </div>
 
         <div class="home-title mt-5">
-            <h2>Sách ngoại ngữ</h2>
+            <?php
+            $category = $conn->query("SELECT id from categories where category = 'Sách ngoại ngữ'");
+            $row = $category->fetch_assoc();
+            ?>
+            <h2>
+                <a href="./?p=products&c=<?php echo md5($row['id']) ?>"> Sách ngoại ngữ </a>
+            </h2>
         </div>
         <div class="row gx-4 gx-lg-5 row-cols-md-3 row-cols-xl-4 justify-content-center">
             <?php
@@ -96,7 +102,13 @@
         </div>
 
         <div class="home-title mt-5">
-            <h2>Sách cấp 1</h2>
+            <?php
+            $category = $conn->query("SELECT id from categories where category = 'Sách cấp I'");
+            $row = $category->fetch_assoc();
+            ?>
+            <h2>
+                <a href="./?p=products&c=<?php echo md5($row['id']) ?>"> Sách cấp I </a>
+            </h2>
         </div>
         <div class="row gx-4 gx-lg-5 row-cols-md-3 row-cols-xl-4 justify-content-center">
             <?php
