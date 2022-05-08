@@ -339,7 +339,7 @@ if ($products->num_rows > 0) {
             rating_data = $(this).data('rating');
 
         });
-        
+
         // Hiển thị đánh giá
         $('#save_review').click(function () {
 

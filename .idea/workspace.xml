@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6971a28-3edd-4a1b-bb12-02453dcd3d61" name="Default Changelist" comment="duc anh commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/Rating.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view_product.php" beforeDir="false" afterPath="$PROJECT_DIR$/view_product.php" afterDir="false" />
-    </list>
+    <list default="true" id="c6971a28-3edd-4a1b-bb12-02453dcd3d61" name="Default Changelist" comment="duc anh commit" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +15,7 @@
     <session id="1080116318">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.31" value="2" />
@@ -80,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/view_product.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="341" column="8" selection-start-line="341" selection-start-column="8" selection-end-line="341" selection-end-column="8" />
+              <caret line="341" selection-start-line="341" selection-end-line="341" />
               <folding>
                 <element signature="e#10224#10231#1#HTML" expanded="true" />
               </folding>
@@ -253,7 +249,7 @@
       <workItem from="1651890235629" duration="9359000" />
       <workItem from="1651915736184" duration="11581000" />
       <workItem from="1651974363861" duration="1777000" />
-      <workItem from="1651993449638" duration="4665000" />
+      <workItem from="1651993449638" duration="4799000" />
     </task>
     <task id="LOCAL-00001" summary="duc anh commit">
       <created>1651056139108</created>
@@ -266,11 +262,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80709000" />
+    <option name="totallyTimeSpent" value="80843000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.67449665" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -550,7 +545,7 @@
     <entry file="file://$PROJECT_DIR$/view_product.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="341" column="8" selection-start-line="341" selection-start-column="8" selection-end-line="341" selection-end-column="8" />
+          <caret line="341" selection-start-line="341" selection-end-line="341" />
           <folding>
             <element signature="e#10224#10231#1#HTML" expanded="true" />
           </folding>
