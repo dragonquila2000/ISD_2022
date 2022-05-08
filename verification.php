@@ -14,6 +14,7 @@ $user = new ForgetPassword();
                 <tr>
                     <p style="margin-bottom: 20px" class="title">Nhập mã xác nhận</p>
                 </tr>
+                <hr>
                 <tr>
                     <?php if (isset($_POST['submit'])) {
                         $error = array();

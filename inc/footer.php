@@ -86,7 +86,7 @@
           <li><a href="./?p=payment">Hướng dẫn thanh toán</a></li>
           <li><a href="./?p=delivery">Phương thức vận chuyển</a></li>
           <li><a href="./?p=private_policy">Chính sách bảo mật thông tin</a></li>
-          <li><a href="#">Download danh mục sách độc quyền</a></li>
+          <li><a href="download.php?file=danh_muc.xlsx">Download danh mục sách độc quyền</a></li>
         </ul>
       </div>
 

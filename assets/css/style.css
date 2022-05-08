@@ -258,8 +258,8 @@ samp {
     font-family: var(--bs-font-monospace);
     font-size: 1em;
     direction: ltr
-    /* rtl:ignore */
-;
+        /* rtl:ignore */
+    ;
     unicode-bidi: bidi-override;
 }
 
@@ -3972,11 +3972,11 @@ fieldset:disabled .btn {
 
 .dropdown-menu-start[data-bs-popper] {
     right: auto
-    /* rtl:ignore */
-;
+        /* rtl:ignore */
+    ;
     left: 0
-    /* rtl:ignore */
-;
+        /* rtl:ignore */
+    ;
 }
 
 .dropdown-menu-end {
@@ -3985,11 +3985,11 @@ fieldset:disabled .btn {
 
 .dropdown-menu-end[data-bs-popper] {
     right: 0
-    /* rtl:ignore */
-;
+        /* rtl:ignore */
+    ;
     left: auto
-    /* rtl:ignore */
-;
+        /* rtl:ignore */
+    ;
 }
 
 @media (min-width: 576px) {
@@ -3999,11 +3999,11 @@ fieldset:disabled .btn {
 
     .dropdown-menu-sm-start[data-bs-popper] {
         right: auto
-        /* rtl:ignore */
-    ;
+            /* rtl:ignore */
+        ;
         left: 0
-        /* rtl:ignore */
-    ;
+            /* rtl:ignore */
+        ;
     }
 
     .dropdown-menu-sm-end {
@@ -4012,11 +4012,11 @@ fieldset:disabled .btn {
 
     .dropdown-menu-sm-end[data-bs-popper] {
         right: 0
-        /* rtl:ignore */
-    ;
+            /* rtl:ignore */
+        ;
         left: auto
-        /* rtl:ignore */
-    ;
+            /* rtl:ignore */
+        ;
     }
 }
 
@@ -4027,11 +4027,11 @@ fieldset:disabled .btn {
 
     .dropdown-menu-md-start[data-bs-popper] {
         right: auto
-        /* rtl:ignore */
-    ;
+            /* rtl:ignore */
+        ;
         left: 0
-        /* rtl:ignore */
-    ;
+            /* rtl:ignore */
+        ;
     }
 
     .dropdown-menu-md-end {
@@ -4040,11 +4040,11 @@ fieldset:disabled .btn {
 
     .dropdown-menu-md-end[data-bs-popper] {
         right: 0
-        /* rtl:ignore */
-    ;
+            /* rtl:ignore */
+        ;
         left: auto
-        /* rtl:ignore */
-    ;
+            /* rtl:ignore */
+        ;
     }
 }
 
@@ -4055,11 +4055,11 @@ fieldset:disabled .btn {
 
     .dropdown-menu-lg-start[data-bs-popper] {
         right: auto
-        /* rtl:ignore */
-    ;
+            /* rtl:ignore */
+        ;
         left: 0
-        /* rtl:ignore */
-    ;
+            /* rtl:ignore */
+        ;
     }
 
     .dropdown-menu-lg-end {
@@ -4068,11 +4068,11 @@ fieldset:disabled .btn {
 
     .dropdown-menu-lg-end[data-bs-popper] {
         right: 0
-        /* rtl:ignore */
-    ;
+            /* rtl:ignore */
+        ;
         left: auto
-        /* rtl:ignore */
-    ;
+            /* rtl:ignore */
+        ;
     }
 }
 
@@ -4083,11 +4083,11 @@ fieldset:disabled .btn {
 
     .dropdown-menu-xl-start[data-bs-popper] {
         right: auto
-        /* rtl:ignore */
-    ;
+            /* rtl:ignore */
+        ;
         left: 0
-        /* rtl:ignore */
-    ;
+            /* rtl:ignore */
+        ;
     }
 
     .dropdown-menu-xl-end {
@@ -4096,11 +4096,11 @@ fieldset:disabled .btn {
 
     .dropdown-menu-xl-end[data-bs-popper] {
         right: 0
-        /* rtl:ignore */
-    ;
+            /* rtl:ignore */
+        ;
         left: auto
-        /* rtl:ignore */
-    ;
+            /* rtl:ignore */
+        ;
     }
 }
 
@@ -4111,11 +4111,11 @@ fieldset:disabled .btn {
 
     .dropdown-menu-xxl-start[data-bs-popper] {
         right: auto
-        /* rtl:ignore */
-    ;
+            /* rtl:ignore */
+        ;
         left: 0
-        /* rtl:ignore */
-    ;
+            /* rtl:ignore */
+        ;
     }
 
     .dropdown-menu-xxl-end {
@@ -4124,11 +4124,11 @@ fieldset:disabled .btn {
 
     .dropdown-menu-xxl-end[data-bs-popper] {
         right: 0
-        /* rtl:ignore */
-    ;
+            /* rtl:ignore */
+        ;
         left: auto
-        /* rtl:ignore */
-    ;
+            /* rtl:ignore */
+        ;
     }
 }
 
@@ -5242,8 +5242,8 @@ fieldset:disabled .btn {
     padding-right: 0.5rem;
     color: #6c757d;
     content: var(--bs-breadcrumb-divider, "/")
-    /* rtl: var(--bs-breadcrumb-divider, "/") */
-;
+        /* rtl: var(--bs-breadcrumb-divider, "/") */
+    ;
 }
 
 .breadcrumb-item.active {
@@ -6486,8 +6486,8 @@ fieldset:disabled .btn {
     position: absolute;
     top: 0;
     left: 0
-    /* rtl:ignore */
-;
+        /* rtl:ignore */
+    ;
     z-index: 1070;
     display: block;
     max-width: 276px;
@@ -6871,16 +6871,16 @@ fieldset:disabled .btn {
 @-webkit-keyframes spinner-border {
     to {
         transform: rotate(360deg)
-        /* rtl:ignore */
-    ;
+            /* rtl:ignore */
+        ;
     }
 }
 
 @keyframes spinner-border {
     to {
         transform: rotate(360deg)
-        /* rtl:ignore */
-    ;
+            /* rtl:ignore */
+        ;
     }
 }
 
@@ -11911,12 +11911,12 @@ button#login-btn {
 
 p.title {
     color: #666;
-    margin: 0px auto 25px;
+    margin: 0px auto 8px;
     font-size: 25px;
     font-weight: 300;
     text-align: center;
 }
-        
+
 .control-login {
     font-size: 15px;
     border: 1px solid #ccc;

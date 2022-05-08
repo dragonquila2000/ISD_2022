@@ -36,12 +36,12 @@ $user = new ForgetPassword();
                 <tr>
                     <p style="margin-bottom: 20px" class="title">Quên mật khẩu</p>
                 </tr>
+                <hr>
                 <tr>
                     <input type="email" class="control-login" name="email" placeholder="Nhập email">
                     <span style="color: red"><?php if (isset($error['email'])) echo $error['email'] ?></span><br><br>
                 </tr>
-
-                <tr><br>
+                <tr>
                     <div class="login">
                         <button class="login btn btn-light" type="submit" name="submit">Gửi yêu cầu</button>
                     </div>
