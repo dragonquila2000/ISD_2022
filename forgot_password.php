@@ -1,3 +1,7 @@
+<?php
+require_once ('classes/ForgetPassword.php');
+$user = new ForgetPassword();
+?>
 <div class="right">
     <form action="" method="post" id="formDemo" class="form">
         <div class="form-login">

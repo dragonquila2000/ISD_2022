@@ -8,11 +8,11 @@ require_once('initialize.php');
 require_once('classes/DBConnection.php');
 require_once('classes/SystemSettings.php');
 require_once ('Mail/index.php');
-require_once ('classes/ForgetPassword.php');
+
 $mail = new Mailer();
 $db = new DBConnection;
 $conn = $db->conn;
-$user = new ForgetPassword();
+
 
 function redirect($url=''){
 	if(!empty($url))
