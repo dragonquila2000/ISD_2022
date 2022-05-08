@@ -1,24 +1,29 @@
 <?php
-require_once ('classes/ForgetPassword.php');
+require_once('classes/ForgetPassword.php');
 $user = new ForgetPassword();
 ?>
+<style>
+    body {
+        background-color: whitesmoke;
+    }
+</style>
 <div class="right">
     <form action="" method="post" id="formDemo" class="form">
         <div class="form-login">
             <table>
                 <tr>
                     <?php
-                    if (isset($_POST['submit'])){
+                    if (isset($_POST['submit'])) {
                         $error = array();
                         $email = $_POST['email'];
-                        if ($email == ''){
+                        if ($email == '') {
                             $error['email'] = 'Không được để trống';
                         }
-                        if (empty($error)){
+                        if (empty($error)) {
                             $result = $user->getUserEmail($email);
-                            $code = substr(rand(0,999999),0,6);
+                            $code = substr(rand(0, 999999), 0, 6);
                             $title = 'Quên mật khẩu';
-                            $content = "Mã xác nhận của bạn là: <span style='color:green'>".$code."</span>";
+                            $content = "Mã xác nhận của bạn là: <span style='color:green'>" . $code . "</span>";
                             $mail->sendMail($title, $content, $email);
 
                             $_SESSION['mail'] = $email;

@@ -1,7 +1,12 @@
 <?php
-require_once ('classes/ForgetPassword.php');
+require_once('classes/ForgetPassword.php');
 $user = new ForgetPassword();
 ?>
+<style>
+    body {
+        background-color: whitesmoke;
+    }
+</style>
 <div class="right">
     <form action="" method="post" id="formDemo" class="form">
         <div class="form-login">
@@ -21,15 +26,15 @@ $user = new ForgetPassword();
                 }
                 ?>
                 <tr>
-                    <?php if (isset($error['fail'])): ?>
+                    <?php if (isset($error['fail'])) : ?>
                         <div class="alert alert-danger" role="alert">
-                            <?=$error['fail']?>
+                            <?= $error['fail'] ?>
                         </div>
-                    <?php elseif (($error['success'])): ?>
+                    <?php elseif (($error['success'])) : ?>
                         <div class="alert alert-success" role="alert">
-                            <?=$error['success']?>
+                            <?= $error['success'] ?>
                         </div>
-                    <?php else: ?>
+                    <?php else : ?>
                         <div class="alert alert-primary" role="alert">
                             Đổi mật khẩu mới tại đây
                         </div>
@@ -37,15 +42,11 @@ $user = new ForgetPassword();
 
                 </tr>
                 <tr>
-                    <input type="text" name="newpass" class="control-login"
-                           value="<?php if (isset($_POST['newpass'])) echo $_POST['newpass'] ?>"
-                           placeholder="Nhập mật khẩu mới"> <br>
+                    <input type="text" name="newpass" class="control-login" value="<?php if (isset($_POST['newpass'])) echo $_POST['newpass'] ?>" placeholder="Nhập mật khẩu mới"> <br>
                 </tr>
                 <br>
                 <tr>
-                    <input type="text" name="repass" class="control-login"
-                           value="<?php if (isset($_POST['repass'])) echo $_POST['repass'] ?>"
-                           placeholder="Nhập mật khẩu mới">
+                    <input type="text" name="repass" class="control-login" value="<?php if (isset($_POST['repass'])) echo $_POST['repass'] ?>" placeholder="Nhập mật khẩu mới">
                 </tr>
                 <br>
                 <tr><br>

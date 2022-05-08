@@ -1,7 +1,12 @@
 <?php
-require_once ('classes/ForgetPassword.php');
+require_once('classes/ForgetPassword.php');
 $user = new ForgetPassword();
 ?>
+<style>
+    body {
+        background-color: whitesmoke;
+    }
+</style>
 <div class="right">
     <form action="" method="post" id="formDemo" class="form">
         <div class="form-login">
@@ -20,11 +25,11 @@ $user = new ForgetPassword();
                     } ?>
                 </tr>
                 <tr>
-                    <?php if (isset($error['fail'])): ?>
+                    <?php if (isset($error['fail'])) : ?>
                         <div class="alert alert-danger" role="alert">
                             <?= $error['fail'] ?>
                         </div>
-                    <?php else: ?>
+                    <?php else : ?>
                         <div class="alert alert-primary" role="alert">
                             Hãy nhập mã xác nhận mà chúng tôi đã gửi cho bạn về email
                         </div>

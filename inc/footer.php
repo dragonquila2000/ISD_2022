@@ -62,28 +62,26 @@
 <footer class="py-5 bg-dark border-top shadow-lg">
   <div class="container text-white">
     <div class="row" style="border-bottom: 1px dashed">
-      <div class="col-md-3 contact">
+      <div class="col-md-4 contact">
         <h5>Hỗ trợ khách hàng</h5>
         <p class="m-0">Hotline: <b>0243.775.5620 | 0912.269.229</b></p>
         <span>(8h - 21h / T2 - T7)</span>
         <p><i class="fa fa-envelope"></i> <a href="contact@nhasachminhthang.vn">contact@nhasachminhthang.vn</a></p>
       </div>
 
-      <div class="col-md-3 question">
+      <div class="col-md-2 question">
         <h5>Hỏi đáp</h5>
         <ul class="p-0" style="list-style-type:none;">
-          <li><a href="#">Các câu hỏi phổ biến</a></li>
-          <li><a href="#">Gửi câu hỏi</a></li>
-          <li><a href="#">Tin tức</a></li>
-          <li><a href="#">Liên hệ</a></li>
+          <li><a href="./?p=news">Tin tức</a></li>
+          <li><a href="./?p=discount">Ưu đãi</a></li>
+          <li><a href="./?p=about">Về chúng tôi</a></li>
         </ul>
       </div>
 
       <div class="col-md-3 help">
         <h5>Trợ giúp</h5>
         <ul class="p-0" style="list-style-type:none;">
-          <li><a href="#">Hướng dẫn tải đĩa CD</a></li>
-          <li><a href="#">Hướng dẫn đặt hàng</a></li>
+          <li><a href="./?p=shop_guide">Hướng dẫn đặt hàng</a></li>
           <li><a href="./?p=delivery_confirm">Xác nhận đơn hàng</a></li>
           <li><a href="./?p=payment">Hướng dẫn thanh toán</a></li>
           <li><a href="./?p=delivery">Phương thức vận chuyển</a></li>
